@@ -1,21 +1,22 @@
-package br.com.alura;
+package br.com.alura.command;
 
 import br.com.alura.client.ClientHttpConfiguration;
-import br.com.alura.service.PetService;
+import br.com.alura.service.AbrigoService;
 
 import java.io.IOException;
 
-public class ImportarPetsDoAbrigoCommand implements Command {
+public class ListarAbrigoCommand implements Command {
 
     @Override
     public void execute() {
         try {
             ClientHttpConfiguration client = new ClientHttpConfiguration();
-            PetService petService = new PetService(client);
+            AbrigoService abrigoService = new AbrigoService(client);
 
-            petService.importarPetsDoAbrigo();
+            abrigoService.listarAbrigo();
         } catch (IOException | InterruptedException e) {
             System.out.println(e.getMessage());
         }
     }
 }
+

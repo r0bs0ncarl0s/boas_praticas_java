@@ -2,6 +2,12 @@ package br.com.alura;
 
 import java.util.Scanner;
 
+import br.com.alura.command.CadastrarAbrigoCommand;
+import br.com.alura.command.CommandExecutor;
+import br.com.alura.command.ImportarPetsDoAbrigoCommand;
+import br.com.alura.command.ListarAbrigoCommand;
+import br.com.alura.command.ListarPetsDoAbrigoCommand;
+
 public class AdopetConsoleApplication {
 
     public static void main(String[] args) {

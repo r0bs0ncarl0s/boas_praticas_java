@@ -1,4 +1,4 @@
-package br.com.alura;
+package br.com.alura.command;
 
 import br.com.alura.client.ClientHttpConfiguration;
 import br.com.alura.service.AbrigoService;
